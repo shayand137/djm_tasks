@@ -73,4 +73,10 @@ using <h3> tag: Hello …., You are welcome to my site.
      echo $num1. "+" .$num2. "+" .$num3. "=" .$sum;
 
      ?>
+     <h4> 6.Write a PHP script to detect the browser being used to view your pages. 
+      (Use predefined variables: $_SERVER).</h4>
+      <?php
+      echo $_SERVER['HTTP_USER_AGENT'];
+      ?>
+
 <?php include "footer.php" ?>
