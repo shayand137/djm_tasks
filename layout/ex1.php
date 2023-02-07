@@ -43,4 +43,5 @@ echo "
 ?>
 <h3> 4 screenshot of the development environment </h3>
 <img scr="sc.jpg" alt ="sc4">
-<?php include "footer.php" ?>
+<?php include "footer.php"
+ ?>
