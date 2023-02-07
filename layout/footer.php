@@ -6,8 +6,11 @@
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright
   </div>
-  <!-- Copyright -->
-
+  <div class="footer-copyright text-center py-3">
+    <?php
+    echo date("F d, Y H:i" , filemtime(basename($_SERVER['PHP_SELF'])));
+    ?>
+  </div>
 </footer></div>
 </div>
 
