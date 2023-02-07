@@ -12,7 +12,7 @@ echo "Hello world! My name is \"David\"";
 <?php
 echo date("d.m.Y");
 ?> 
-<?php include "footer.php" ?>
+
 
 <h3> 3.4.$title = "PHP is interesting”. Put this variable as a title marked as h1 (heading 1) in your HTML document. </h3>
 <?php
@@ -41,3 +41,6 @@ echo "
 </table>
 ";
 ?>
+<h3> 4 screenshot of the development environment </h3>
+<img scr="sc.jpg" alt ="sc4">
+<?php include "footer.php" ?>
