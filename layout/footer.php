@@ -7,9 +7,11 @@
   <div class="footer-copyright text-center py-3">© 2020 Copyright
   </div>
   <div class="footer-copyright text-center py-3">
+    <p> last modify on 
     <?php
-    echo date("F d, Y H:i" , filemtime(basename($_SERVER['PHP_SELF'])));
+    echo date("l, F d, Y H:i a" , filemtime(basename($_SERVER['PHP_SELF'])));
     ?>
+    </p>
   </div>
 </footer></div>
 </div>
