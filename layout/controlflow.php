@@ -29,4 +29,51 @@ else
 }
 ?>
 
+<h4> 3.Write a program to grade students based on their total score for a subject. Use variable
+     to hold the total score. The grading scheme is</h4>
+
+<form method ="post">
+<input type= "number" name = "grade" placeholder = "grade:">
+<input type="submit" value = "Submit">
+</form>
+<?php
+$grade =$_POST['grade'];
+if ($grade >= 80) {
+    echo "The grading scheme is Excellent";
+}
+elseif ($grade < 80 && $grade >=70){
+    echo"The grading scheme is great";
+}
+elseif($grade < 70 && $grade >=60){
+   echo "The grading scheme is good";
+}
+elseif ($grade < 60 && $grade >=50) {
+   echo "The grading scheme is pass";
+}
+elseif($grade <50){
+   echo "you are Failed";
+}
+?>
+<h4> 4.Write a program to get inputs (age and name) from the user and based on their age,
+     decide if he/she is eligible for voting. (18 or more than 18 years is eligible for voting,)</h4>
+
+<form method ="post">
+<input type= "text" name = "name" placeholder = "Name:">
+<input type= "number" name = "age" placeholder = "Age:">
+<input type="submit" value = "Submit">
+</form>
+<?php
+$name = $_POST['name'];
+$age = $_POST['age'];
+if ($age >= 18){
+    echo " $name" . "<br>";
+    echo"yes";
+}
+        else
+   {
+    echo " $name" . "<br>";
+    echo"no";
+   } 
+   ?>
+
 <?php include "footer.php" ?>
