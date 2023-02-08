@@ -74,6 +74,32 @@ if ($age >= 18){
     echo " $name" . "<br>";
     echo"no";
    } 
-   ?>
+   ?> 
 
+   <h4> 5.In task 5, you used $_SERVER['HTTP_USER_AGENT']; to get the browser name. 
+   Use Switch statement with strops function to print the name of the browser as below </h4> 
+<?php
+  
+$browser= $_SERVER['HTTP_USER_AGENT'];
+
+switch (true) {
+ case (stristr($browser, 'Edge')):
+    echo "You are using Microsoft Edge.";
+    break;
+case (stristr($browser, 'Chrome')):
+    echo "You are using Google Chrome.";
+    break;
+case (stristr($browser, 'Firefox')):
+    echo "You are using Mozilla Firefox.";
+    break;
+case (stristr($browser, 'Safari')):
+    echo "You are using Apple Safari.";
+    break;
+case (stristr($browser, 'Opera')):
+    echo "You are using Opera.";
+    break;
+    default:
+    echo "Could not detect browser name.";
+}
+?>
 <?php include "footer.php" ?>
