@@ -8,7 +8,5 @@ $color = $_POST['color'];
 echo "<h3> Your name is $fname $lname  <br>
 your favourite color is $color <br> and your date of birth is $dob
 </h3>";
-
 ?>
-
 <?php include "footer.php" ?>
