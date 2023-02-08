@@ -2,8 +2,7 @@
 
 <h1> exercise 3.In-class Task Variable & Operators</h1>
 
-<h2>
-1. Create a simple html form to get Firstname and Lastname from the user and use echo echo statement to print 
+<h2>1. Create a simple html form to get Firstname and Lastname from the user and use echo echo statement to print 
 using <h3> tag: Hello …., You are welcome to my site.  
 </h2>
 
@@ -55,6 +54,7 @@ using <h3> tag: Hello …., You are welcome to my site.
     </tr>
   </tbody>
 </table>
+
 <h3> 4.Write a PHP script with two string variables. Assign any text to these variables. 
    Join them together.  Print the length of the string. (Hint: string function)</h3>
    <?php
@@ -63,6 +63,7 @@ using <h3> tag: Hello …., You are welcome to my site.
    echo  $First_name ." ".  $Last_name . "<br>";
    echo  $Last_name . ":" .strlen( $First_name)."  ". "<br>".$Last_name . ":" .strlen($Last_name);
    ?>
+
 <h4> 5.Write a script to add up the numbers: 298, 234, 46. Use variables to store these numbers
      and echo statement to output your answer.</h4>
      <?php
@@ -73,11 +74,13 @@ using <h3> tag: Hello …., You are welcome to my site.
      echo $num1. "+" .$num2. "+" .$num3. "=" .$sum;
 
      ?>
+     
      <h4> 6.Write a PHP script to detect the browser being used to view your pages. 
       (Use predefined variables: $_SERVER).</h4>
       <?php
       echo $_SERVER['HTTP_USER_AGENT'];
       ?>
+      
       <h4>Write a PHP script in the footer section of your universal footer just below the Copyright information to display
          the last modification time of a file. (Hint: Use predefined variable $_SERVER, basename function  to get the filename ,
           filetime function to get the last modified time & date function to print the date and time)</h4>
