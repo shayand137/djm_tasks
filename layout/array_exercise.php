@@ -1,4 +1,5 @@
 <?php include "header.php" ?>
+
 <form action="" method="get" >
 <input type="number" placeholder="Enter your first number" name="num1" > <br>
 <input type="number" placeholder="Enter your second number" name="num2" > <br>
