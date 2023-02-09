@@ -49,6 +49,23 @@ foreach ($courses4 as $i){
 }
 ?>
 
+<h4>5. List all your favorite colors and their hexadecimal equivalents. (associative arrays)</h4>
+<?php
+$colors = array(
+    "pink" => "#fbdcf2",
+    "darkgreen" => "#395943",
+    "gray" => "#9b9b9b",
+    "with" => "#ffffff",
+    "black" => "#000000",
+);
+
+$keys = array_keys($colors);
+
+for ($i = 0; $i < count($keys); $i++) {
+    echo $keys[$i] . ": " . $colors[$keys[$i]] . "<br>";
+}
+?>
+
 
 
 <?php include "footer.php" ?>
