@@ -65,7 +65,24 @@ for ($i = 0; $i < count($keys); $i++) {
     echo $keys[$i] . ": " . $colors[$keys[$i]] . "<br>";
 }
 ?>
+<h4>6. PHP script to calculate and display average temperature, five lowest and highest temperatures.</h4>
 
+<?php
+$temperatures = array(78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
 
+$sum = array_sum($temperatures);
+$count = count($temperatures);
+$average = $sum / $count;
+
+sort($temperatures);
+
+$bottom = array_slice($temperatures, 0, 5);
+
+$up = array_slice($temperatures, -5);
+
+echo "Average temperature: " . $average . "<br>";
+echo "Five lowest temperatures: " . implode(", ", $bottom) . "<br>";
+echo "Five highest temperatures: " . implode(", ", $up);
+?>
 
 <?php include "footer.php" ?>
