@@ -38,6 +38,16 @@ krsort($courses3);
 echo implode(",",$courses3). "<br>";
 ?>
 
+<h4>4. Change the following array's all values to upper case.
+ $courses4=array("php", "html", "javascript", "cms", "project");
+</h4>
+<?php
+ $courses4 = array("php", "html", "javascript", "cms", "project");
+$courses4 = array_map('strtoupper', $courses4);
+foreach ($courses4 as $i){
+    echo "$i".",";
+}
+?>
 
 
 
