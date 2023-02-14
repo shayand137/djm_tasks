@@ -19,4 +19,30 @@ $row = mysqli_fetch_array($result);
 <option value="Others"> Others </option>
 </select><br><br>
 
+<input type="submit" value="Update" name ="update"><br><br>
+<input type="submit" value="Delete" name ="delete">
+
 </form>
+
+<?php
+if (isset($_POST['update'])){
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $query = mysqli_query($conn,"UPDATE studentinfo set fname='$fname', lname='$lname' where id='$a' ");
+    if ($query){
+        echo "<h2>Your information is updated successfully</h2> ";
+    }
+    else { echo "Record not modified";}
+}
+?>
+
+<?php
+if (isset($_POST['delete'])){
+ 
+    $query = mysqli_query($conn,"DELETE studentinfo set fname='$fname', lname='$lname' where id='$a' ");
+    if ($query){
+        echo "<h2>Your information is delete successfully</h2> ";
+    }
+    else { echo "Record not modified";}
+}
+?>
