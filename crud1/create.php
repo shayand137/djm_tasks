@@ -28,6 +28,8 @@ if (isset($_POST['submit'])){
         echo "your information is added successfully"; 
     }
     else{
+
+        
         echo "Error:" . $conn->error;
     }
 }
