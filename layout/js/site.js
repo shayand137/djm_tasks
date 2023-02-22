@@ -39,3 +39,4 @@ function fnameVal(){
         alert("`First name must have atleast 5 character");
         return false;
     }
+}
